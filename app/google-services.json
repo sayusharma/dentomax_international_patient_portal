@@ -1,0 +1,85 @@
+{
+  "project_info": {
+    "project_number": "126545671711",
+    "firebase_url": "https://dentomax-international.firebaseio.com",
+    "project_id": "dentomax-international",
+    "storage_bucket": "dentomax-international.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:126545671711:android:6bc0bbf3e3524c1a3fc72a",
+        "android_client_info": {
+          "package_name": "com.e.dentomaxserver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "126545671711-305jthtfe1crn8n7jl0qfau42vqangek.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.e.dentomaxserver",
+            "certificate_hash": "d02647d3b6187ad812c4e466017826dae4eed8df"
+          }
+        },
+        {
+          "client_id": "126545671711-8s8d1slfkevs1lsetdu3rkjdlg19bcve.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDd9Z9J-vIpXKxYZI0ZTNNX2FctDBOn4j8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "126545671711-8s8d1slfkevs1lsetdu3rkjdlg19bcve.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:126545671711:android:371da7d37193a5013fc72a",
+        "android_client_info": {
+          "package_name": "com.e.patientportal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "126545671711-os0p9cb5vao0cjfqcv159da9ke0res1g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.e.patientportal",
+            "certificate_hash": "d02647d3b6187ad812c4e466017826dae4eed8df"
+          }
+        },
+        {
+          "client_id": "126545671711-8s8d1slfkevs1lsetdu3rkjdlg19bcve.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDd9Z9J-vIpXKxYZI0ZTNNX2FctDBOn4j8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "126545671711-8s8d1slfkevs1lsetdu3rkjdlg19bcve.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
