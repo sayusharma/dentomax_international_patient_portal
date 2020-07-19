@@ -4,7 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import com.shrikanthravi.customnavigationdrawer2.data.MenuItem;
 import com.shrikanthravi.customnavigationdrawer2.widget.SNavigationDrawer;
@@ -115,4 +117,41 @@ public class DashActivity extends AppCompatActivity {
             }
         });
     }
+    public void onClickPrescription(View view){
+        Intent intent = new Intent(DashActivity.this,PrescriptionActivity.class);
+        startActivity(intent);
+    }
+    public void onClickComplaint(View view){
+        Intent intent = new Intent(DashActivity.this,ComplaintActivity.class);
+        startActivity(intent);
+    }
+    public void onClickPast(View view){
+        Intent intent = new Intent(DashActivity.this,PastHistoryActivity.class);
+        startActivity(intent);
+    }
+    public void onClickMedical(View view){
+        Intent intent = new Intent(DashActivity.this,MedicalHistoryActivity.class);
+        startActivity(intent);
+    }
+    public void onClickReports(View view){
+        Intent intent = new Intent(DashActivity.this,ReportActivity.class);
+        startActivity(intent);
+    }
+    public void onClickImages(View view){
+        Intent intent = new Intent(DashActivity.this,ImageActivity.class);
+        startActivity(intent);
+    }
+    public void onClickDiagnoses(View view){
+        Intent intent = new Intent(DashActivity.this,DiagnosesActivity.class);
+        startActivity(intent);
+    }
+    public void onClickPayments(View view){
+        Intent intent = new Intent(DashActivity.this,PaymentActivity.class);
+        startActivity(intent);
+    }
+    public void onClickSuper(View view){
+        Intent intent = new Intent(DashActivity.this,SupervisingDoctorActivity.class);
+        startActivity(intent);
+    }
+
 }

@@ -9,7 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".DashActivity"></activity>
+        <activity android:name=".MyProfileActivity"></activity>
+        <activity android:name=".SupervisingDoctorActivity" />
+        <activity android:name=".ViewReportActivity" />
+        <activity android:name=".ReportActivity" />
+        <activity android:name=".ImageActivity" />
+        <activity android:name=".PaymentActivity" />
+        <activity android:name=".DiagnosesActivity" />
+        <activity android:name=".MedicalHistoryActivity" />
+        <activity android:name=".PastHistoryActivity" />
+        <activity android:name=".PrescriptionActivity" />
+        <activity android:name=".ComplaintActivity" />
+        <activity android:name=".DashActivity" />
         <activity android:name=".SetProfileActivity" />
         <activity android:name=".LoginActivity" />
         <activity

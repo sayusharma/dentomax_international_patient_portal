@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/overlay"
+    android:background="@color/bgcolor"
     tools:context=".DashActivity">
     <com.shrikanthravi.customnavigationdrawer2.widget.SNavigationDrawer
         android:layout_width="match_parent"
