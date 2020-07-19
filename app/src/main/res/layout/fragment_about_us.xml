@@ -10,7 +10,93 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:text="@string/about_us"
+                android:layout_margin="10dp"
+                android:lineSpacingExtra="2dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="wrap_content"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimary"
+                android:layout_height="40dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Our Mission"
+                    android:textColor="#fff"
+                    android:textSize="25sp"
+                    android:gravity="center"
+                    android:layout_height="match_parent"/>
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:text="@string/our_mission"
+                android:layout_margin="10dp"
+                android:lineSpacingExtra="2dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="wrap_content"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimary"
+                android:layout_height="40dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Gallery"
+                    android:textColor="#fff"
+                    android:textSize="25sp"
+                    android:gravity="center"
+                    android:layout_height="match_parent"/>
+            </RelativeLayout>
+            <ImageView
+                android:layout_width="300dp"
+                android:src="@drawable/one"
+                android:layout_marginTop="10dp"
+                android:adjustViewBounds="true"
+                android:layout_height="240dp"/>
+            <ImageView
+                android:layout_width="300dp"
+                android:src="@drawable/two"
+                android:layout_marginTop="10dp"
+                android:adjustViewBounds="true"
+                android:layout_height="240dp"/>
+            <ImageView
+                android:layout_width="300dp"
+                android:src="@drawable/three"
+                android:layout_marginTop="10dp"
+                android:adjustViewBounds="true"
+                android:layout_height="240dp"/>
+            <ImageView
+                android:layout_width="300dp"
+                android:src="@drawable/four"
+                android:layout_marginTop="10dp"
+                android:adjustViewBounds="true"
+                android:layout_height="240dp"/>
+            <ImageView
+                android:layout_width="300dp"
+                android:src="@drawable/five"
+                android:layout_marginTop="10dp"
+                android:adjustViewBounds="true"
+                android:layout_height="240dp"/>
+            <ImageView
+                android:layout_width="300dp"
+                android:src="@drawable/six"
+                android:layout_marginTop="10dp"
+                android:adjustViewBounds="true"
+                android:layout_height="240dp"/>
+            <ImageView
+                android:layout_width="300dp"
+                android:src="@drawable/seven"
+                android:layout_marginTop="10dp"
+                android:adjustViewBounds="true"
+                android:layout_height="240dp"/>
+        </LinearLayout>
     </ScrollView>
 
 </FrameLayout>

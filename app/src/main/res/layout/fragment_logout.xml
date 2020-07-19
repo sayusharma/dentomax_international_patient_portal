@@ -3,12 +3,70 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bgcolor"
     tools:context=".LogoutFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:orientation="vertical"
+       android:layout_height="match_parent">
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:background="@color/colorPrimary"
+           android:layout_height="240dp">
+           <View
+               android:background="#fff"
+               android:layout_width="match_parent"
+               android:layout_height="1dp"/>
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_centerInParent="true"
+               android:layout_height="wrap_content">
+               <com.google.android.material.card.MaterialCardView
+                   android:layout_width="220dp"
+                   android:layout_centerHorizontal="true"
+                   app:cardBackgroundColor="#fff"
+                   android:id="@+id/patientLogoutLogo"
+                   app:cardCornerRadius="10dp"
+                   android:layout_height="150dp">
+                   <ImageView
+
+                       android:layout_width="200dp"
+                       android:layout_height="130dp"
+                       android:layout_gravity="center"
+                       android:src="@drawable/logoo" />
+               </com.google.android.material.card.MaterialCardView>
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_marginTop="5dp"
+                    android:text="DENTOMAX INTERNATIONAL"
+                   android:textColor="#fff"
+                   android:gravity="center"
+                   android:textSize="23sp"
+                   android:textStyle="bold"
+                   android:layout_below="@id/patientLogoutLogo"
+                   android:layout_height="wrap_content"/>
+           </RelativeLayout>
+       </RelativeLayout>
+       <androidx.cardview.widget.CardView
+           android:layout_width="match_parent"
+           android:layout_marginLeft="50dp"
+           android:layout_marginRight="50dp"
+           android:onClick="onClickLogout"
+           android:layout_marginTop="30dp"
+           app:cardBackgroundColor="@color/colorPrimary"
+           app:cardCornerRadius="20dp"
+           android:layout_height="wrap_content">
+           <TextView
+               android:layout_width="match_parent"
+               android:textSize="18sp"
+               android:textColor="#fff"
+               android:padding="10dp"
+               android:text="LOG ME OUT"
+               android:gravity="center"
+               android:layout_height="match_parent"/>
+       </androidx.cardview.widget.CardView>
+   </LinearLayout>
 
 </FrameLayout>

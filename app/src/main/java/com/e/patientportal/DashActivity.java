@@ -117,8 +117,18 @@ public class DashActivity extends AppCompatActivity {
             }
         });
     }
+    public void onClickLogout(View view){
+        SaveSharedPreference.clearPreference(getApplicationContext());
+        Intent intent = new Intent(DashActivity.this,LoginActivity.class);
+        startActivity(intent);
+        finish();
+    }
     public void onClickPrescription(View view){
         Intent intent = new Intent(DashActivity.this,PrescriptionActivity.class);
+        startActivity(intent);
+    }
+    public void onClickFeedback(View view){
+        Intent intent = new Intent(DashActivity.this,FeedbackActivity.class);
         startActivity(intent);
     }
     public void onClickComplaint(View view){

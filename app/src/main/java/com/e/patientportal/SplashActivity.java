@@ -15,9 +15,16 @@ public class SplashActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent  = new Intent(SplashActivity.this, LoginActivity.class);
-                startActivity(intent);
-                finish();
+                if (SaveSharedPreference.getUserName(getApplicationContext()).isEmpty()) {
+                    Intent intent = new Intent(SplashActivity.this, LoginActivity.class);
+                    startActivity(intent);
+                    finish();
+                }
+                else {
+                    Intent intent = new Intent(SplashActivity.this, DashActivity.class);
+                    startActivity(intent);
+                    finish();
+                }
             }
         },1200);
     }
