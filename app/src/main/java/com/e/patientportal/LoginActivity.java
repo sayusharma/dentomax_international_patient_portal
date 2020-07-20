@@ -40,20 +40,11 @@ public class LoginActivity extends AppCompatActivity {
                 public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                     if (dataSnapshot.child(email.getText().toString()).exists()){
                         String password = (String) dataSnapshot.child(email.getText().toString()).child("password").getValue();
-                        boolean first = (boolean) dataSnapshot.child(email.getText().toString()).child("first").getValue();
                         if (password.equals(pass.getText().toString())){
                             SaveSharedPreference.setUserName(getApplicationContext(),email.getText().toString());
-                            if (first){
-                                Intent intent = new Intent(LoginActivity.this,SetProfileActivity.class);
-                                intent.putExtra("pass",password);
-                                startActivity(intent);
-                                finish();
-                            }
-                            else {
                                 Intent intent = new Intent(LoginActivity.this,DashActivity.class);
                                 startActivity(intent);
                                 finish();
-                            }
                         }
                         else{
                             Toast.makeText(getApplicationContext(),"PASSWORD DOES NOT MATCH",Toast.LENGTH_LONG).show();

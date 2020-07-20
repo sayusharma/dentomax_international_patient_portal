@@ -2,7 +2,6 @@ package com.e.patientportal.Model;
 
 public class User {
     private String name,address,mobile,photo,password;
-    private boolean first;
     public User(){}
     public String getName() {
         return name;
@@ -44,20 +43,12 @@ public class User {
         this.password = password;
     }
 
-    public boolean getFirst() {
-        return first;
-    }
 
-    public void setFirst(boolean first) {
-        this.first = first;
-    }
-
-    public User(String name, String address, String mobile, String photo, String password, boolean first) {
+    public User(String name, String address, String mobile, String photo, String password) {
         this.name = name;
         this.address = address;
         this.mobile = mobile;
         this.photo = photo;
         this.password = password;
-        this.first = first;
     }
 }

@@ -58,6 +58,7 @@
                     android:layout_width="match_parent"
                     android:drawableStart="@drawable/ic_baseline_admin"
                     android:hint="Patient UID"
+                    android:maxLines="1"
                     android:id="@+id/editPatientID"
                     android:textColor="#000"
                     android:drawablePadding="6dp"
@@ -89,6 +90,7 @@
                     android:id="@+id/editPassword"
                     android:textColor="#000"
                     android:inputType="textPassword"
+                    android:maxLines="1"
                     android:drawablePadding="6dp"
                     android:layout_height="wrap_content"/>
             </com.google.android.material.textfield.TextInputLayout>
