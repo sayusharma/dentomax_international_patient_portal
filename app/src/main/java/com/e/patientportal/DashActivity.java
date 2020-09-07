@@ -1,13 +1,23 @@
 package com.e.patientportal;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.e.patientportal.Common.CurrentUser;
+import com.e.patientportal.Model.User;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.shrikanthravi.customnavigationdrawer2.data.MenuItem;
 import com.shrikanthravi.customnavigationdrawer2.widget.SNavigationDrawer;
 
@@ -18,12 +28,31 @@ public class DashActivity extends AppCompatActivity {
     SNavigationDrawer sNavigationDrawer;
     Class fragmentClass;
     public static Fragment fragment;
+    private FirebaseDatabase firebaseDatabase;
+    private DatabaseReference databaseReference;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dash);
         sNavigationDrawer = findViewById(R.id.navigationDrawer);
         List<MenuItem> menuItems = new ArrayList<>();
+        firebaseDatabase = FirebaseDatabase.getInstance();
+        databaseReference = firebaseDatabase.getReference("users");
+        final ProgressDialog progressDialog = new ProgressDialog(this);
+        progressDialog.setMessage("Loading....");
+        progressDialog.show();
+        databaseReference.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                CurrentUser.currentUser = dataSnapshot.child(SaveSharedPreference.getUserName(getApplicationContext())).getValue(User.class);
+                progressDialog.dismiss();
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+                progressDialog.dismiss();
+            }
+        });
 
         //Use the MenuItem given by this library and not the default one.
         //First parameter is the title of the menu item and then the second parameter is the image which will be the background of the menu item.
@@ -119,6 +148,8 @@ public class DashActivity extends AppCompatActivity {
     }
     public void onClickLogout(View view){
         SaveSharedPreference.clearPreference(getApplicationContext());
+        FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
+        firebaseAuth.signOut();
         Intent intent = new Intent(DashActivity.this,LoginActivity.class);
         startActivity(intent);
         finish();

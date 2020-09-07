@@ -5,12 +5,15 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.e.patientportal.Common.CurrentUser;
 import com.e.patientportal.Model.User;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -75,26 +78,14 @@ public class MyProfileFragment extends Fragment {
         final ImageView imageView = view.findViewById(R.id.patientProfilePic);
         name = view.findViewById(R.id.profilePatientName);
         add = view.findViewById(R.id.profilePatientAdd);
-        mob = view.findViewById(R.id.profilePatientAdd);
-        DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("users").child(SaveSharedPreference.getUserName(getActivity()));
-        databaseReference.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-             user = dataSnapshot.getValue(User.class);
-                Picasso.get()
-                        .load(user.getPhoto())
-                        .into(imageView);
-                name.setText(user.getName());
-                add.setText(user.getAddress());
-                mob.setText(user.getMobile());
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
-
-            }
-        });
-
+        mob = view.findViewById(R.id.profilePatientMob);
+        user = CurrentUser.currentUser;
+        Picasso.get()
+                .load(user.getPhoto())
+                .into(imageView);
+        name.setText(user.getName());
+        add.setText(user.getAddress());
+        mob.setText(user.getMobile());
         return view;
     }
 }

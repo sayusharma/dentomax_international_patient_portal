@@ -34,8 +34,9 @@
                     android:layout_height="match_parent"/>
             </androidx.cardview.widget.CardView>
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:text="DENTOMAX INTERNATIONAL"
+                android:gravity="center"
                android:layout_below="@id/image"
                 android:textColor="#fff"
                 android:layout_centerHorizontal="true"
@@ -73,12 +74,13 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
                         <TextView
-                            android:textSize="15sp"
-                            android:layout_marginTop="3dp"
+                            android:textSize="13sp"
+                            android:layout_marginTop="4dp"
                             android:textColor="#000"
                             android:textStyle="bold"
                             android:text="MY COMPLAINT"
-                            android:layout_width="wrap_content"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"/>
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
@@ -102,12 +104,13 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
                         <TextView
-                            android:textSize="15sp"
-                            android:layout_marginTop="3dp"
+                            android:textSize="13sp"
+                            android:layout_marginTop="4dp"
                             android:textColor="#000"
+                            android:gravity="center"
                             android:textStyle="bold"
                             android:text="PRESCRIPTION"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"/>
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
@@ -136,12 +139,13 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
                         <TextView
-                            android:textSize="14sp"
-                            android:layout_marginTop="3dp"
+                            android:textSize="13sp"
+                            android:layout_marginTop="4dp"
                             android:textColor="#000"
                             android:textStyle="bold"
+                            android:gravity="center"
                             android:text="PAST HISTORY"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"/>
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
@@ -165,12 +169,13 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
                         <TextView
-                            android:textSize="15sp"
-                            android:layout_marginTop="3dp"
+                            android:textSize="13sp"
+                            android:layout_marginTop="4dp"
                             android:textColor="#000"
                             android:textStyle="bold"
                             android:text="MEDICAL HISTORY"
-                            android:layout_width="wrap_content"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"/>
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
@@ -198,12 +203,13 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
                         <TextView
-                            android:textSize="15sp"
-                            android:layout_marginTop="3dp"
+                            android:textSize="13sp"
+                            android:layout_marginTop="4dp"
                             android:textColor="#000"
                             android:textStyle="bold"
+                            android:gravity="center"
                             android:text="MY REPORTS"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"/>
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
@@ -226,12 +232,13 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
                         <TextView
-                            android:textSize="15sp"
-                            android:layout_marginTop="3dp"
+                            android:textSize="13sp"
+                            android:layout_marginTop="4dp"
                             android:textColor="#000"
                             android:textStyle="bold"
                             android:text="MY IMAGES"
-                            android:layout_width="wrap_content"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"/>
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
@@ -259,12 +266,13 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
                         <TextView
-                            android:textSize="15sp"
-                            android:layout_marginTop="3dp"
+                            android:textSize="13sp"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center"
                             android:textColor="#000"
                             android:textStyle="bold"
                             android:text="DIAGNOSES"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"/>
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
@@ -289,12 +297,13 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
                         <TextView
-                            android:textSize="13sp"
+                            android:textSize="11sp"
                             android:layout_marginTop="5dp"
                             android:textColor="#000"
                             android:textStyle="bold"
+                            android:gravity="center"
                             android:text="SUPERVISING DOCTOR"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"/>
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
@@ -322,12 +331,13 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
                         <TextView
-                            android:textSize="15sp"
-                            android:layout_marginTop="3dp"
+                            android:textSize="13sp"
+                            android:layout_marginTop="4dp"
                             android:textColor="#000"
                             android:textStyle="bold"
+                            android:gravity="center"
                             android:text="MY PAYMENTS"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"/>
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
@@ -350,12 +360,13 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
                         <TextView
-                            android:textSize="15sp"
-                            android:layout_marginTop="3dp"
+                            android:textSize="13sp"
+                            android:layout_marginTop="4dp"
                             android:textColor="#000"
+                            android:gravity="center"
                             android:textStyle="bold"
                             android:text="FEEDBACK"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"/>
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>

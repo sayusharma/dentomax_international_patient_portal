@@ -1,7 +1,7 @@
 package com.e.patientportal.Model;
 
 public class User {
-    private String name,address,mobile,photo,password;
+    private String name,address,mobile,photo;
     public User(){}
     public String getName() {
         return name;
@@ -35,20 +35,11 @@ public class User {
         this.photo = photo;
     }
 
-    public String getPassword() {
-        return password;
-    }
 
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-
-    public User(String name, String address, String mobile, String photo, String password) {
+    public User(String name, String address, String mobile) {
         this.name = name;
         this.address = address;
         this.mobile = mobile;
         this.photo = photo;
-        this.password = password;
     }
 }

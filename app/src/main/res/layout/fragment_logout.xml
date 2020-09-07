@@ -39,7 +39,7 @@
                </com.google.android.material.card.MaterialCardView>
                <TextView
                    android:layout_width="match_parent"
-                   android:layout_marginTop="5dp"
+                   android:layout_marginTop="10dp"
                     android:text="DENTOMAX INTERNATIONAL"
                    android:textColor="#fff"
                    android:gravity="center"
@@ -63,6 +63,7 @@
                android:textSize="18sp"
                android:textColor="#fff"
                android:padding="10dp"
+               android:textStyle="bold"
                android:text="LOG ME OUT"
                android:gravity="center"
                android:layout_height="match_parent"/>

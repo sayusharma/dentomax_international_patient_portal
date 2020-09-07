@@ -10,7 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
         <activity android:name=".FeedbackActivity"></activity>
-        <activity android:name=".MyProfileActivity" />
         <activity android:name=".SupervisingDoctorActivity" />
         <activity android:name=".ViewReportActivity" />
         <activity android:name=".ReportActivity" />
@@ -22,7 +21,7 @@
         <activity android:name=".PrescriptionActivity" />
         <activity android:name=".ComplaintActivity" />
         <activity android:name=".DashActivity" />
-        <activity android:name=".LoginActivity" />
+        <activity android:name=".LoginActivity" android:windowSoftInputMode="adjustResize" />
         <activity
             android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
             android:screenOrientation="portrait"
